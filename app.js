@@ -8,7 +8,7 @@ app            = express();
 // APP CONFIG
 //mongoose.connect('mongodb://localhost:27017/blogapp', { useNewUrlParser: true });
 
-mongoose.connect('mongodb+srv://saravanan:S.shanvi2016@blogapp-eirbd.mongodb.net/blogapp?retryWrites=true', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://<password>@blogapp-eirbd.mongodb.net/blogapp?retryWrites=true', { useNewUrlParser: true });
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
